@@ -1,93 +1,70 @@
-# ALIOOLIO
+<p align="center"><img src="assets/icon.png" width="140" alt="알리오올리오 캐릭터"></p>
 
+<h1 align="center">알리오올리오 · ALIO · ALL EAT OH!</h1>
 
+<p align="center"><b>공공 부문 업무추진비 맛지도</b><br>
+공공기관·지자체·중앙부처·지방공기업이 공개한 업무추진비 결제 기록을 식당 지도로 모았습니다.</p>
 
-## Getting started
+<p align="center">👉 <a href="https://alioolio.k-union.kr"><b>alioolio.k-union.kr</b></a> (시험 공개 · 국내 접속)</p>
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+---
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+## 어떤 서비스인가요
 
-## Add your files
+공공기관은 업무추진비를 어디에서, 언제, 얼마나 썼는지 공개합니다. 다만 기관마다 게시판·파일 형식이 달라 한눈에 보기 어렵습니다.
+알리오올리오는 이 공개 자료를 모아 **결제 장소를 실제 식당 위치와 맞춰 지도에 올린 서비스**입니다.
 
-* [Create](https://docs.gitlab.com/user/project/repository/web_editor/#create-a-file) or [upload](https://docs.gitlab.com/user/project/repository/web_editor/#upload-a-file) files
-* [Add files using the command line](https://docs.gitlab.com/topics/git/add_files/#add-files-to-a-git-repository) or push an existing Git repository with the following command:
+- 우리 동네에서 여러 기관이 오래 찾은 식당은 어디인지
+- 기관별로 그해 가장 많이 결제한 곳은 어디인지
+- 지역별로 결제 규모와 단골 식당은 어떤지
 
-```
-cd existing_repo
-git remote add origin https://gitlab.aigov.go.kr/bigone-kised/alioolio.git
-git branch -M main
-git push -uf origin main
-```
+를 지도와 목록으로 살펴볼 수 있습니다.
 
-## Integrate with your tools
+| PC | 모바일 |
+|---|---|
+| <img src="assets/screen-pc.png" width="560" alt="PC 화면"> | <img src="assets/screen-mobile.png" width="230" alt="모바일 화면"> |
 
-* [Set up project integrations](https://gitlab.aigov.go.kr/bigone-kised/alioolio/-/settings/integrations)
+## 수록 범위 (2026-10-30 기준)
 
-## Collaborate with your team
+| 항목 | 규모 |
+|---|---|
+| 지도에 오른 장소 | 16,318곳 (확정 위치 11,868 · 위치 추정 4,450) |
+| 결제 기록 | 140,334건 |
+| 장소가 1곳 이상인 기관 | 179개 |
+| 기간 | 2019년 ~ 최신 공개분 |
 
-* [Invite team members and collaborators](https://docs.gitlab.com/user/project/members/)
-* [Create a new merge request](https://docs.gitlab.com/user/project/merge_requests/creating_merge_requests/)
-* [Automatically close issues from merge requests](https://docs.gitlab.com/user/project/issues/managing_issues/#closing-issues-automatically)
-* [Enable merge request approvals](https://docs.gitlab.com/user/project/merge_requests/approvals/)
-* [Set auto-merge](https://docs.gitlab.com/user/project/merge_requests/auto_merge/)
+자료는 **분기 또는 반기마다** 새 공개분을 모아 갱신합니다.
 
-## Test and Deploy
+## 주요 기능
 
-Use the built-in continuous integration in GitLab.
+- **지도·목록 검색**: 식당·지역·기관 이름으로 검색하고, 기관 유형·직위·기간으로 좁혀 봅니다. 멀리서는 권역별 고봉밥 묶음, 가까이 갈수록 결제가 많은 곳부터 핀이 드러납니다.
+- **맛집 도장(테마)** — 여러 개를 켜면 겹치는 곳만 보입니다.
 
-* [Get started with GitLab CI/CD](https://docs.gitlab.com/ci/quick_start/)
-* [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/user/application_security/sast/)
-* [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/topics/autodevops/requirements/)
-* [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/user/clusters/agent/)
-* [Set up protected environments](https://docs.gitlab.com/ci/environments/protected_environments/)
+  | | 도장 | 기준(요약) |
+  |---|---|---|
+  | <img src="assets/mascot-upchelin.png" height="56"> | 🏅 **업슐랭 가이드** | 여러 기관이 여러 해 찾은 곳 (식당 6개 기관·5개 연도·15건, 카페 2개 기관·2개 연도·5건) |
+  | <img src="assets/mascot-solo.png" height="56"> | 🍶 **고독한 기관장** | 기관장이 1~2인으로 결제한 기록이 2건 이상 |
+  | <img src="assets/mascot.png" height="56"> | 🌙 **심야식당** | 기관장 결제 중 밤 8시~새벽 5시 결제가 3건 이상 |
+  | <img src="assets/mascot-yeongran.png" height="56"> | 💸 **영란로드** | 1인당 식사 가액 기준(3만 원, 2024.8.27부터 5만 원)의 90~100% 결제 3건 이상 또는 건당 50만 원 이상 2건 이상 (참고 지표) |
 
-***
+- **연도별 금·은·동 · 장기집권**: 같은 기관이 그해 4건·3개월 이상 결제한 곳을 단골로 보고, 결제 횟수 1~3위에 🥇🥈🥉, 3년 연속 1위면 장기집권 👑.
+- **📺 6시내법카(지역 리포트)**: 시·도/시·군·구를 고르면 지역에 음영을 씌우고 결제 요약, 오래 사랑받은 곳, 최근 줄 서는 곳 등을 보여 줍니다.
+- **내 위치 · 네이버 지도 연결**: 내 주변 식당을 보고, 식당 카드에서 네이버 지도 장소 정보로 바로 넘어갑니다.
 
-# Editing this README
+## 자료와 방법
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+- **결제 기록**: 각 기관이 공개한 업무추진비 사용 내역 — ALIO(공공기관 경영정보 공개시스템), 기관 홈페이지 공개 게시판(공공기관·지자체·중앙부처·지방공기업).
+- **장소 매칭**: 결제처 상호를 식품 일반음식점 인허가 자료(공공데이터포털)와 대조해 위치를 정했습니다. 원문과 상호·주소가 하나로 확인되면 **확정**, 후보가 하나뿐이지만 일부 확인이 남으면 **위치 추정**(지도에서 점선 핀)으로 표시합니다.
+- **지역 경계**: 통계청 SGIS 행정동 경계(공공누리 제1유형) · 가공 vuski/admdongkor(CC BY 4.0).
+- **지도**: NAVER 지도, OpenStreetMap.
 
-## Suggestions for a good README
+## 꼭 알아 두세요
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+- 공개된 **과거 결제 기록**을 정리한 것입니다. 직위는 결제마다 공시된 값이며 **본인 참석이나 현재 방문을 뜻하지 않습니다.**
+- 도장·메달은 재미로 붙인 분류입니다. **맛 평가나 적법·부당 여부 판단이 아닙니다.**
+- 개인 이름, 연락처, 카드번호, 원본 파일은 싣지 않습니다.
+- 위치 추정 장소는 실제 결제 지점과 다를 수 있습니다. 잘못된 위치·상호는 사이트의 정정 요청으로 알려 주시면 고칩니다.
 
-## Name
-Choose a self-explaining name for your project.
+## 이 저장소
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+이 저장소는 서비스를 소개하는 곳입니다. 서비스는 [alioolio.k-union.kr](https://alioolio.k-union.kr)에서 운영합니다.
