@@ -59,7 +59,7 @@
   | | 도장 | 기준(요약) |
   |---|---|---|
   | <img src="assets/mascot-upchelin.png" height="56"> | 🏅 **업슐랭 가이드** | 광역 시·도마다 여러 기관이 여러 해 찾은 식당 상위 20곳(3개 기관·4개 연도·10건, 자료가 적은 지역은 최소 2곳) + 카페 최대 3곳 |
-  | <img src="assets/mascot-solo.png" height="56"> | 🍶 **고독한 기관장** | 기관장이 1~2인으로 결제한 기록이 2건 이상 |
+  | <img src="assets/mascot-solo.png" height="56"> | 🍚 **고독한 기관장** | 기관장이 1~2인으로 결제한 기록이 2건 이상 |
   | <img src="assets/mascot.png" height="56"> | 🌙 **심야식당** | 기관장 결제 중 밤 8시~새벽 5시 결제가 3건 이상 |
   | <img src="assets/mascot-yeongran.png" height="56"> | 💸 **영란로드** | 1인당 식사 가액 기준(3만 원, 2024.8.27부터 5만 원)의 90~100% 결제 3건 이상 또는 건당 50만 원 이상 2건 이상 (참고 지표) |
 
