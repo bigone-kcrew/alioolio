@@ -84,13 +84,13 @@
 - 소스 코드는 공개하지 않습니다.
 
 ## 🗂 데이터 출처
-- 업무추진비 사용 내역: [ALIO 공공기관 경영정보 공개시스템](https://www.alio.go.kr), 각 기관 홈페이지 공개 게시판
+- 업무추진비 사용 내역: [ALIO 공공기관 경영정보 공개시스템](https://www.alio.go.kr)(공시 검색은 [ALIO-RAG](https://gitlab.aigov.go.kr/bigone-kised/alio-rag) 활용), 각 기관 홈페이지 공개 게시판
 - 음식점 위치: [공공데이터포털 식품 일반음식점 인허가 정보](https://www.data.go.kr)
 - 지역 경계: 통계청 SGIS 행정동 경계(공공누리 제1유형), [vuski/admdongkor](https://github.com/vuski/admdongkor)(CC BY 4.0)
 - 지도: NAVER 지도, © OpenStreetMap contributors
 
 ## 🔗 관련 프로젝트
-- [ALIO-RAG](https://gitlab.aigov.go.kr/bigone-kised/alio-rag) — 공공기관 ALIO 공시 문서(경영공시·기관 내규·단체협약)와 근거 법령을 AI 도구에서 조항 단위로 검색하는 MCP 서버
+- [ALIO-RAG](https://gitlab.aigov.go.kr/bigone-kised/alio-rag) — 공공기관 ALIO 공시 문서와 근거 법령을 AI 도구에서 조항 단위로 검색하는 MCP 서버입니다. 알리오올리오의 공공기관 업무추진비 공시는 ALIO-RAG로 찾아 모았습니다.
 
 ## 📮 문의
 bigone@k-union.kr
