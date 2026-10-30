@@ -89,5 +89,8 @@
 - 지역 경계: 통계청 SGIS 행정동 경계(공공누리 제1유형), [vuski/admdongkor](https://github.com/vuski/admdongkor)(CC BY 4.0)
 - 지도: NAVER 지도, © OpenStreetMap contributors
 
+## 🔗 관련 프로젝트
+- [ALIO-RAG](https://gitlab.aigov.go.kr/bigone-kised/alio-rag) — 공공기관 ALIO 공시 문서(경영공시·기관 내규·단체협약)와 근거 법령을 AI 도구에서 조항 단위로 검색하는 MCP 서버
+
 ## 📮 문의
 bigone@k-union.kr
